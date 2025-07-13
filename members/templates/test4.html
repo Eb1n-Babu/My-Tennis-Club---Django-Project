@@ -1,0 +1,21 @@
+{% extends "master.html"%}
+
+
+{% block title %}
+   test4
+{% endblock %}
+
+{% block content %}
+  <body>
+    <table border='1'>
+  <tr>
+    <th>Firstname</th>
+  </tr>
+  {% for x in mydata %}
+    <tr>
+        <td>{{ x }}</td>
+    </tr>
+  {% endfor %}
+</table>
+  </body>
+{%endblock%}

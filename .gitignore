@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Django
+db.sqlite3
+*.log
+
+# Env
+.env
+venv/
+.env.local
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if using Tailwind or frontend tools)
+node_modules/
+dist/

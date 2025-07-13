@@ -1,0 +1,26 @@
+{% extends "master.html"%}
+
+{% block title %}
+  test3
+{%endblock%}
+
+{% block content %}
+  <body>
+    <table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+      <th>Phone</th>
+  </tr>
+  {% for x in my_members %}
+    <tr>
+      <td>{{ x.id }}</td>
+        <td>{{ x.first_name }}</td>
+      <td>{{ x.last_name }}</td>
+        <td>{{ x.phone_number }}</td>
+    </tr>
+  {% endfor %}
+</table>
+  </body>
+{%endblock%}

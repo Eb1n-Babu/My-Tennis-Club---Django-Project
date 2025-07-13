@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+
+{% block title %}
+   template
+{% endblock %}
+
+{% block content %}
+   <h1>templateStudy</h1>
+   <ul>
+        {% for x in datas%}
+          <h1>{{x.phone_number}}</h1>
+        {% if x.phone_number == "06238205010" %}
+            <h1>hello</h1>
+        {% endif %}
+        {% endfor %}
+        {% comment %}
+         <h1>hello</h1>
+       {% endcomment %}
+       {% include 'footer.html' %}
+    </ul>
+{% endblock %}
+
